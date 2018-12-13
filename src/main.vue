@@ -211,7 +211,6 @@
           this._liClick = true;
           this.$set(item, "checked", !item.checked);
           this.checkedChange(item, index, item.checked);
-          console.log(item)
           return;
         }
 
@@ -247,7 +246,6 @@
       },
       // 菜单选中变化
       checkedChange(item, index, checked) {
-        console.log('change');
         if (checked) {
           this.selectedItems.push(item);
         } else {
